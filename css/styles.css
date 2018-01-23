@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: FFMarkRegular;
+    src: url('../fonts/FF-Mark-Pro-Book.otf')
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: FFMarkRegular, sans-serif;
+    font-size: 12px;*/
+}
+
+body {
+    background-color: #21262b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: #131317;
+    border-bottom: 1px solid #000;
+}
+
+h1 {
+  /*width: 600px;
+  padding: 15px;
+  background-color: #131317;
+  border-bottom: 1px solid #000;*/
+  font-family: Monoton;
+    font-size: 40px;
+    margin: 0.2em;
+    padding: 15px;
+    word-spacing: 10px
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    min-height: calc(100vh - 74.7167px);
+}
+
+.controls-wrapper {
+    padding:15px;
+    min-height: 100%;
+    width: 350px;
+    background-color: #131317;
+    border-right: 1px solid #000;
+}
+
+.grid-controls,
+.paint-controls {
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: FFMarkRegular, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 12px;
+    font-family: FFMarkRegular, sans-serif;
+    color: #ec1e59;
+    margin-bottom: 5px;
+}
+
+span {
+    color: #795e66;
+}
+
+input[type=text],
+input[type=number],
+input[type=submit],
+button,
+select {
+    text-align: center;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    background-color: #2b101a;
+    color: #ec1e59;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=submit],
+select {
+    width: 100%;
+}
+
+#backgroundPicker {
+    margin-bottom: 15px;
+}
+
+input[type=submit],
+button {
+    border: 1px solid #ec1e59;
+
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+input[type=submit]:hover,
+button:hover {
+    cursor: pointer;
+    background-color: #ec1e59;
+    color: #2b101a;
+}
+
+.paint-controls,
+.controls-list {
+    margin-top:20px;
+}
+
+.grid-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.grid-buttons button {
+    flex-grow: 1;
+    width: 50%;
+    margin-right: 5px;
+}
+
+.grid-buttons button:nth-child(2n) {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+input[type=color] {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+input[type=color]:hover {
+    cursor: pointer;
+}
+
+.canvas-wrapper {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top:35px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* table:hover {
+    cursor: defaul;
+} */
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+.canvasCol {
+    background-color: #21262b;
+}
+
+.toggleGrid {
+    border: none;
+}
+
+.eyedropper {
+    cursor: crosshair;
+}
